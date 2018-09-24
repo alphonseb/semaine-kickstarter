@@ -4,5 +4,6 @@
 
 /yarn.lock
 
+/dist/css
 
-
+/dist/js

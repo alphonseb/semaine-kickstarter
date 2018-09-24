@@ -11,7 +11,7 @@ const plumber = require('gulp-plumber');
 const browserify = require('gulp-browserify');
 
 gulp.task('scripts', () => {
-    gulp.src('/src/js/*.js')
+    gulp.src('../src/js/*.js')
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);
@@ -21,14 +21,14 @@ gulp.task('scripts', () => {
         .pipe(browserify())
         .pipe(babel())
         .pipe(concat('main.js'))
-        .pipe(gulp.dest('/dist/js'))
+        .pipe(gulp.dest('../dist/js'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
-        .pipe(gulp.dest('/dist/js'));
+        .pipe(gulp.dest('../dist/js'));
 });
 
 gulp.task('styles', () => {
-    gulp.src('/src/scss/*.scss')
+    gulp.src('../src/scss/*.scss')
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);
@@ -37,24 +37,24 @@ gulp.task('styles', () => {
         }))
         .pipe(sass())
         .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
-        .pipe(gulp.dest('/dist/css'))
+        .pipe(gulp.dest('../dist/css'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cleancss())
-        .pipe(gulp.dest('/dist/css'));
+        .pipe(gulp.dest('../dist/css'));
 });
 
 gulp.task('images', () => {
-    gulp.src('/src/img/*')
+    gulp.src('../src/img/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('/dist/img'));
+        .pipe(gulp.dest('../dist/img'));
 });
 
 gulp.task('run',['scripts','styles','images']);
 
 gulp.task('watch',() => {
-    gulp.watch('/src/img/**/*',['images']);
-    gulp.watch('/src/scss/**/*.scss',['styles']);
-    gulp.watch('/src/js/**/*.js',['scripts']);
+    gulp.watch('../src/img/**/*',['images']);
+    gulp.watch('../src/scss/**/*.scss',['styles']);
+    gulp.watch('../src/js/**/*.js',['scripts']);
 });
 
 gulp.task('default',['watch']);
