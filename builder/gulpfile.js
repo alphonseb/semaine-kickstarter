@@ -11,7 +11,7 @@ const plumber = require('gulp-plumber');
 const browserify = require('gulp-browserify');
 
 gulp.task('scripts', () => {
-    gulp.src('../src/js/*.js')
+    gulp.src('../src/js/**/*.js')
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);
@@ -28,7 +28,7 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('styles', () => {
-    gulp.src('../src/scss/*.scss')
+    gulp.src('../src/scss/**/*.scss')
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);
@@ -44,7 +44,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('images', () => {
-    gulp.src('../src/img/*')
+    gulp.src('../src/img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('../dist/img'));
 });
