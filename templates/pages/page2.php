@@ -1,4 +1,4 @@
-<div class="page2 section" data-rank='2'>
+<div class="page2 section" data-select='2'>
   <?php include "templates/logos.php"; ?>
     <p class="bigTitle">
       From the pool...

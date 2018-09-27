@@ -5,6 +5,11 @@
     background-image: url(../img/pool.jpg);
     background-position: center;
     background-size: 99.5%;
+    display: none;
+    h2{
+      color: $white;
+      margin: 0;
+    }
     .bigTitle{
       position: absolute;
       font-size: 13.5rem;

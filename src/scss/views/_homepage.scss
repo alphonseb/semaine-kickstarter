@@ -4,6 +4,21 @@
     width: 100vw;
     position: relative;
     overflow: hidden;
+    .arrow{
+        position: absolute;
+        right: 18%;
+        top: 43%;
+        p{
+            position: static;
+            color: $white;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        &_img{
+            width: 80px;
+            height: auto;
+        }
+    }
     &__shoe{
         position: absolute;
         height: auto;
@@ -103,13 +118,14 @@
             & > div {
                 display: flex;
                 flex-direction: column;
-                transform: rotate(-45deg);
-                a{
+                // align-items: center;
+                // transform: rotate(-45deg);
+                &>a{
                     display: block;
                     border: solid 2px $white;
                     position: relative;
-                    margin-left: 6rem;
-                    transform: translateY(calc(-50% + 6px));
+                    // margin-left: 6rem;
+                    // transform: translateY(calc(-50% + 6px));
                     p{
                         position: absolute;
                         top: 50%;
@@ -119,14 +135,15 @@
                         transform: rotate(45deg)  translateY(-50%) translateX(-50%);
                     }
                 }
-                a:first-child{
+                a.kickstarter{
                     width: 120px;
                     height: 120px;
                     margin-bottom: 2rem;
-                    border-color: $ksgreen;
                     background: $ksgreen;
+                    position: relative;
                     transition: all .3s ease;
-                    img{
+                    transform: translateX(-70%) rotate(-45deg);
+                    &>img{
                         position: absolute;
                         top: 50%;
                         left: 50%;
@@ -134,18 +151,77 @@
                         height: auto;
                         transform:translateY(-50%) translateX(-50%)  rotate(45deg) ;
                     }
+
                 }
-                a:last-child{
-                    width: 100px;
-                    height: 100px;
-                    background: blue;
-                    img{
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        width: 50%;
-                        height: auto;
-                        transform:translateY(-50%) translateX(-50%)  rotate(45deg) ;
+                .socials{
+                    display: flex;
+                    // overflow: hidden;
+                    // width: 100px;
+                    // transition: all .3s ease;
+                    align-items: center;
+                    position: relative;
+                    transform: translateY(-31%) translateX(4%);
+
+                    &:hover{
+                        [class^="network"]{
+                            left: 0;
+                        }
+                    }
+                    a{
+                        transform: rotate(-45deg);
+                        margin-right: 3rem;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        &:not(.share){
+                            transition: all .3s ease;
+                            width: 50px;
+                            height: 50px;
+                            border: solid 2px $white;
+                            background: $white;
+                            position: relative;
+                            // top: 50%;
+                            // left: 50%;
+                            // transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+                            // transform: rotate(-45deg);
+                            z-index: 1;
+                            img:not(.arrow_img){
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translateX(-50%) translateY(-50%) rotate(45deg);
+                                width: 60%;
+                                height: auto;
+                            }
+                        }
+                    }
+                    a.network1{
+                        left: -30%;
+                    }
+                    a.network2{
+                        left: -55%;
+
+                    }
+                    a.network3{
+                        left: -80%;
+
+                    }
+                    a.share{
+                        position: relative;
+                        width: 100px;
+                        height: 100px;
+                        background: $blue;
+                        display: block;
+                        border: solid 2px $white;
+                        z-index: 5;
+                        img{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 50%;
+                            height: auto;
+                            transform:translateY(-50%) translateX(-50%)  rotate(45deg) ;
+                        }
                     }
                 }
             }
