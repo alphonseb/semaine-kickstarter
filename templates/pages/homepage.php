@@ -1,7 +1,7 @@
-<div class="homepage is-current section" data-rank='1'>
+<div class="homepage is-displayed section" data-select='1'>
     <video src="dist/img/homevideofinal.webm" loop muted autoplay></video>
     <img class="homepage__shoe mouse-parallax" src="dist/img/shoes/shoe3.png" alt="Freestate shoe">
-    <div class="arrow">
+    <div class="arrow mouse-parallax-slow">
 
         <p>Back us on kickstarter !</p>
         <img class="arrow_img" src="dist/img/arrow.png" alt="Arrow">

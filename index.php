@@ -9,4 +9,6 @@ include "templates/pages/homepage.php";
 
 include "templates/pages/page2.php";
 
+include "templates/pages/page3.php";
+
 require "templates/footer.php";
