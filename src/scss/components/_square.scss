@@ -1,0 +1,14 @@
+.squareB{
+  position: absolute;
+  transform: rotate(45deg);
+  border: $blue 5px solid;
+  width: 100px;
+  height: 100px;
+}
+.squareW{
+  position: relative;
+  transform: rotate(90deg);
+  border: #FFFFFF 5px solid;
+  width: 90px;
+  height: 90px;
+}
