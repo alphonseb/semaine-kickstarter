@@ -4,6 +4,8 @@ let mouseX, mouseY;
 let toParallax = document.querySelectorAll('.mouse-parallax');
 let toParallaxSlower = document.querySelectorAll('.mouse-parallax-slow');
 
+
+
 window.addEventListener(
     'mousemove',
     onMouseMove

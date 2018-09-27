@@ -18,6 +18,7 @@
       left: 21%;
     }
     .firstInfo{
+        display: none;
       position: absolute;
       padding: 1%;
       width: 500px;
@@ -27,6 +28,7 @@
       border: $blue 5px solid;
     }
     .secondInfo{
+        display: none;
       position: absolute;
       padding: 1%;
       width: 500px;
@@ -52,17 +54,32 @@
     div{
       text-align: center;
       p{
-        text-align: center;
+        text-align: left;
         font-size: 1.9rem;
         font-family: 'FilsonProLight', Arial, sans-serif;
       }
     }
     .squareB{
+    box-shadow: 0 0 0 rgba(34,183,255,.6);
       position: absolute;
       transform: rotate(45deg);
       border: $blue 5px solid;
       width: 100px;
       height: 100px;
+      animation: blink 1.3s infinite;
+      @keyframes blink{
+          70%{
+              box-shadow: 0 0 0 10px rgba(34, 183, 255,0);
+          }
+      }
+
+    }
+    .indicator{
+        &:hover{
+            cursor: pointer;
+            &+.firstInfo,&+.secondInfo{
+            display: block;
+        }
     }
     .squareW{
       position: relative;
@@ -71,6 +88,7 @@
       width: 90px;
       height: 90px;
     }
+}
     .sLeft{
       left: 29%;
       bottom: 17%;
