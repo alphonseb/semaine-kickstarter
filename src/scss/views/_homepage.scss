@@ -3,21 +3,7 @@
     width: 100vw;
     position: relative;
     overflow: hidden;
-    .arrow{
-        position: absolute;
-        right: 18%;
-        top: 43%;
-        p{
-            position: static;
-            color: $white;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        &_img{
-            width: 80px;
-            height: auto;
-        }
-    }
+
     &__shoe{
         position: absolute;
         height: auto;
@@ -114,7 +100,8 @@
                     transform: rotate(-45deg) translateY(-50%) translateX(-50%);
                 }
             }
-            & > div {
+            & > div.buttons {
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 // align-items: center;
@@ -132,6 +119,21 @@
                         text-align: center;
                         transform-origin: top left;
                         transform: rotate(45deg)  translateY(-50%) translateX(-50%);
+                    }
+                }
+                .arrow{
+                    position: absolute;
+                    left: 16%;
+                    top: -12%;
+                    p{
+                        position: static;
+                        color: $white;
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                    }
+                    &_img{
+                        width: 80px;
+                        height: auto;
                     }
                 }
                 a.kickstarter{
