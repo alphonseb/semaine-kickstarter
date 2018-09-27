@@ -54,8 +54,16 @@ function transitionForwards(){
                 displayed.style.display = 'none';
                 nextPage.style.display = 'block';
                 displayed.classList.remove('is-displayed');
+                if (document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`)) {
+
+                    document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`).pause();
+                }
                 displayed = nextPage;
                 displayed.classList.add('is-displayed');
+                if (document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`)) {
+
+                    document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`).play();
+                }
                 nextPage = document.querySelector(`[data-select="${parseInt(displayed.dataset.select) + 1}"]`);
                 prevPage = ((parseInt(displayed.dataset.select) - 1) > 0)?document.querySelector(`[data-select="${parseInt(displayed.dataset.select) - 1}"]`):'';
                 console.log({displayed}, {nextPage}, {prevPage});
@@ -107,9 +115,18 @@ function transitionBackwards(){
                 displayed.style.display = 'none';
                 prevPage.style.display = 'block';
                 displayed.classList.remove('is-displayed');
+                if (document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`)) {
+
+                    document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`).pause();
+                }
                 displayed = prevPage;
+                if (document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`)) {
+
+                    document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`).play();
+                }
                 displayed.classList.add('is-displayed');
                 nextPage = document.querySelector(`[data-select="${parseInt(displayed.dataset.select) + 1}"]`);
+
                 prevPage = ((parseInt(displayed.dataset.select) - 1) > 0)?document.querySelector(`[data-select="${parseInt(displayed.dataset.select) - 1}"]`):'';
                 console.log({displayed}, {nextPage}, {prevPage});
             },
