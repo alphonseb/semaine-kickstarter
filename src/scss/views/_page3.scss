@@ -1,0 +1,14 @@
+.page3{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/plage.jpg);
+    background-position: center;
+    background-size: 100%;
+    .blueShoe{
+      position: absolute;
+      top: 20%;
+      right: 33%;
+      width: 72%;
+      transform: rotate(20deg);
+    }
+  }
