@@ -6,10 +6,6 @@
     background-position: center;
     background-size: 99.5%;
     display: none;
-    h2{
-      color: $white;
-      margin: 0;
-    }
     .bigTitle{
       position: absolute;
       font-size: 13.5rem;
@@ -18,30 +14,12 @@
       left: 21%;
     }
     .firstInfo{
-        display: none;
-      position: absolute;
-      padding: 1%;
-      width: 500px;
       left: 3%;
       top: 47%;
-      background: rgba(255,255,255, 0.6);
-      border: $blue 5px solid;
     }
     .secondInfo{
-        display: none;
-      position: absolute;
-      padding: 1%;
-      width: 500px;
       right: 9%;
       top: 46%;
-      background: rgba(255,255,255, 0.6);
-      border: $blue 5px solid;
-    }
-    h3{
-      position: absolute;
-      margin: 0;
-      font-size: 3rem;
-      font-family: 'FilsonProLight', Arial, sans-serif;
     }
     .firstTitle{
       top: 43%;
@@ -59,36 +37,6 @@
         font-family: 'FilsonProLight', Arial, sans-serif;
       }
     }
-    .squareB{
-    box-shadow: 0 0 0 rgba(34,183,255,.6);
-      position: absolute;
-      transform: rotate(45deg);
-      border: $blue 5px solid;
-      width: 100px;
-      height: 100px;
-      animation: blink 1.3s infinite;
-      @keyframes blink{
-          70%{
-              box-shadow: 0 0 0 10px rgba(34, 183, 255,0);
-          }
-      }
-
-    }
-    .indicator{
-        &:hover{
-            cursor: pointer;
-            &+.firstInfo,&+.secondInfo{
-            display: block;
-        }
-    }
-    .squareW{
-      position: relative;
-      transform: rotate(90deg);
-      border: #FFFFFF 5px solid;
-      width: 90px;
-      height: 90px;
-    }
-}
     .sLeft{
       left: 29%;
       bottom: 17%;

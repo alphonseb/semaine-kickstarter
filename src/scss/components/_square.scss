@@ -1,0 +1,31 @@
+
+.squareB{
+box-shadow: 0 0 0 rgba(34,183,255,.6);
+  position: absolute;
+  transform: rotate(45deg);
+  border: $blue 5px solid;
+  width: 100px;
+  height: 100px;
+  animation: blink 1.3s infinite;
+  @keyframes blink{
+      70%{
+          box-shadow: 0 0 0 10px rgba(34, 183, 255,0);
+      }
+  }
+
+}
+.indicator{
+    &:hover{
+        cursor: pointer;
+        &+.firstInfo,&+.secondInfo{
+        display: block;
+    }
+}
+.squareW{
+  position: relative;
+  transform: rotate(90deg);
+  border: #FFFFFF 5px solid;
+  width: 90px;
+  height: 90px;
+}
+}

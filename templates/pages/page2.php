@@ -1,11 +1,11 @@
 <div class="page2 section" data-select='2'>
   <?php include "templates/logos.php"; ?>
   <audio src="dist/audio/piscine.mp3" data-audio="2" loop></audio>
-    <h2 class="bigTitle mouse-parallax">
+    <h2 class="bigTitle bigAttribute mouse-parallax">
       From the pool...
   </h2>
     <img class="yellowShoe mouse-parallax" src="dist/img/shoes/shoe7.png" alt="yellow shoes">
-    <h3 class="firstTitle mouse-parallax-slow">WATER FRIENDLY</h3>
+    <h3 class="firstTitle littleAttribute mouse-parallax-slow">WATER FRIENDLY</h3>
     <div class="indicator">
         <div class="squareB sLeft ">
             <div class="squareW">
@@ -18,7 +18,7 @@
         Freestate was designed to feel at home both on land and in water : the great breathing system of the shoes allows to speed up the drying process. You won’t even notice they were wet !
       </p>
     </div>
-    <h3 class="secondTitle mouse-parallax-slow">ANTI-SLIP TECHNOLOGY</h3>
+    <h3 class="secondTitle littleAttribute mouse-parallax-slow">ANTI-SLIP TECHNOLOGY</h3>
     <div class="indicator">
         <div class="squareB sRight">
             <div class="squareW">

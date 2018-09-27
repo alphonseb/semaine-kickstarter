@@ -8,12 +8,43 @@
     .blueShoe{
       position: absolute;
       top: 20%;
-      right: 33%;
+      right: 32%;
       width: 72%;
       transform: rotate(20deg);
     }
-    p{
-      font-family: 'FilsonProMedium';
-      font-size: 13.5rem;
+    .bigAttribute{
+      left: 44%;
     }
+    .firstInfo{
+      right: 43%;
+      top: 37%;
+    }
+    .secondInfo{
+      right: 9%;
+      top: 60%;
+    }
+    .firstTitle{
+      top: 33%;
+      left: 38%;
+    }
+    .secondTitle{
+      top: 55%;
+      right: 12%;
+    }
+    div{
+      text-align: center;
+      p{
+        text-align: center;
+        font-size: 1.9rem;
+        font-family: 'FilsonProLight', Arial, sans-serif;
+      }
+    }
+  .sLeft{
+    left: 10%;
+    bottom: 30%;
   }
+  .sRight{
+    right: 66%;
+    bottom: 10%;
+  }
+}
