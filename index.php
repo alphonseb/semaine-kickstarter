@@ -2,6 +2,7 @@
 
 require "templates/header.php";
 
+
 include "templates/pages/transition.php";
 
 include "templates/pages/homepage.php";
