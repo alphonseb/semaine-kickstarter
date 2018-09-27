@@ -5,8 +5,18 @@ $black: #000;
 $grey: #f6f6f6;
 $lightblue: #3e72a4;
 $lightpink: #e1a9aa;
+$blue: #83D0F5;
 $ksgreen: #2edd72;
 
 //Fonts
 
-$main-font: 'Montserrat', Arial, sans-serif;
+@font-face {
+	font-family: "FilsonProMedium";
+	src: url("../../fonts/FilsonProMedium-Medium.woff") format("woff"),
+		 url("../../fonts/FilsonProMedium-Medium.woff2") format("woff2");
+};
+@font-face {
+	font-family: "FilsonProLight";
+	src: url("../../fonts/FilsonProLight-Light.woff") format("woff"),
+		 url("../../fonts/FilsonProLight-Light.woff2") format("woff2");
+};
