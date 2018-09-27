@@ -4,6 +4,7 @@
     background-image: url(../img/pool.jpg);
     background-position: center;
     background-size: 99.5%;
+    display: none;
     h2{
       color: $white;
       margin: 0;
@@ -32,6 +33,7 @@
       bottom: 30%;
     }
     h3{
+        margin-top: 0;
       font-size: 3rem;
       font-family: 'FilsonProLight', Arial, sans-serif;
     }
