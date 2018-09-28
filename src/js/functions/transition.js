@@ -14,27 +14,33 @@ let lastY;
 window.addEventListener(
     'wheel',
     (e) => {
-        if(e.wheelDelta < 0){
-            transitionForwards();
+        if (window.innerWidth > 1024) {
+            if(e.wheelDelta < 0){
+                transitionForwards();
+            }
+            else{
+                transitionBackwards();
+            }
         }
-        else{
-            transitionBackwards();
-        }
+
     }
 )
 
 window.addEventListener(
     'touchmove',
     (e  ) => {
-        let currentY = e.touches[0].clientY;
-        if(currentY > lastY){
-            transitionBackwards();
-         // moved down
-        }else if(currentY < lastY){
-            transitionForwards();
-         // moved up
+        if (window.innerWidth > 1024) {
+            let currentY = e.touches[0].clientY;
+            if(currentY > lastY){
+                transitionBackwards();
+             // moved down
+            }else if(currentY < lastY){
+                transitionForwards();
+             // moved up
+            }
+            lastY = currentY;
         }
-        lastY = currentY;
+
     }
 )
 
@@ -94,7 +100,10 @@ function transitionForwards(){
 
                     document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`).play();
                 }
-                nextPage = document.querySelector(`[data-select="${parseInt(displayed.dataset.select) + 1}"]`);
+                if (document.querySelector(`[data-select="${parseInt(displayed.dataset.select) + 1}"]`)) {
+
+                    nextPage = document.querySelector(`[data-select="${parseInt(displayed.dataset.select) + 1}"]`);
+                }
                 prevPage = ((parseInt(displayed.dataset.select) - 1) > 0)?document.querySelector(`[data-select="${parseInt(displayed.dataset.select) - 1}"]`):'';
                 console.log({displayed}, {nextPage}, {prevPage});
             },

@@ -37,6 +37,12 @@
     &[data-transition="3"]{
         background: url(../img/transitions/hk.jpg);
     }
+    &[data-transition="4"]{
+        background: url(../img/city_night.jpg);
+    }
+    &[data-transition="5"]{
+        background: url(../img/transitions/rocky-mountains.jpg);
+    }
 }
 
 @keyframes translate {
