@@ -7,8 +7,8 @@ let prevPage = ((parseInt(displayed.dataset.select) - 1) > 0)?document.querySele
 let homepage = document.querySelector('.homepage');
 let page2 = document.querySelector('.page2');
 let link = document.querySelector('#travel');
+let nextPageLinks = document.querySelectorAll('.next-page');
 
-console.log(displayed, nextPage);
 
 window.addEventListener(
     'wheel',
@@ -19,6 +19,18 @@ window.addEventListener(
         else{
             transitionBackwards();
         }
+    }
+)
+
+nextPageLinks.forEach(
+    (link) => {
+        link.addEventListener(
+            'click',
+            (e) => {
+                e.preventDefault();
+                transitionForwards();
+            }
+        )
     }
 )
 

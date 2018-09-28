@@ -10,4 +10,8 @@ include "templates/pages/page2.php";
 
 include "templates/pages/page3.php";
 
+include "templates/pages/page4.php";
+
+include "templates/pages/about.php";
+
 require "templates/footer.php";
