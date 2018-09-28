@@ -16,4 +16,6 @@ include "templates/pages/page5.php";
 
 include "templates/pages/page6.php";
 
+include "templates/pages/page7.php";
+
 require "templates/footer.php";

@@ -1,0 +1,43 @@
+.page7{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/forest.jpg);
+    background-position: center;
+    background-size: 100%;
+    .greenShoe{
+      position: absolute;
+      top: 14%;
+      right: 32%;
+      width: 39%;
+      transform: rotate(3deg);
+    }
+    .bigAttribute{
+      left: 54%;
+      bottom: 55%;
+    }
+    .firstInfo{
+      right: 73%;
+      top: 40%;
+    }
+    .secondInfo{
+      right: 7%;
+      top: 74%;
+    }
+    .firstTitle{
+      top: 35%;
+      left: 9%;
+    }
+    .secondTitle{
+      top: 69%;
+      right: 11%;
+    }
+    .sLeft{
+      left: 30%;
+      bottom: 32%;
+    }
+    .sRight{
+      right: 37%;
+      bottom: 23%;
+    }
+}
