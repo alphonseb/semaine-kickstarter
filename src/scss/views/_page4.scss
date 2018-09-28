@@ -1,5 +1,42 @@
 .page4{
-    position: absolute;
+    display: none;
     width: 100vw;
     height: 100vh;
+    background-image: url(../img/city_day.jpg);
+    background-position: center;
+    background-size: 100%;
+    .greyShoe{
+      position: absolute;
+      top: 20%;
+      right: 30%;
+      width: 42%;
+      transform: rotate(30deg);
+    }
+    .bigAttribute{
+      left: 70%;
+    }
+    .firstInfo{
+      right: 73%;
+      top: 42%;
+    }
+    .secondInfo{
+      right: 5%;
+      top: 67%;
+    }
+    .firstTitle{
+      top: 37%;
+      left: 8%;
+    }
+    .secondTitle{
+      top: 63%;
+      right: 12%;
+    }
+    .sLeft{
+      left: 36%;
+      bottom: 51%;
+    }
+    .sRight{
+      right: 34%;
+      bottom: 35%;
+    }
 }

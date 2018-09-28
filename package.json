@@ -1,5 +1,5 @@
 {
-  "name": "SI_Front",
+  "name": "si_front",
   "version": "1.0.0",
   "description": "Semaine intensive design et dev front",
   "main": "index.js",
@@ -22,5 +22,13 @@
     "gulp-uglify": "^3.0.1"
   },
   "author": "Equipe",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphonseb/semaine-kickstarter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alphonseb/semaine-kickstarter/issues"
+  },
+  "homepage": "https://github.com/alphonseb/semaine-kickstarter#readme"
 }
