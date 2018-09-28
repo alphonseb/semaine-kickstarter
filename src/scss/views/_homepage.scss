@@ -3,7 +3,10 @@
     width: 100vw;
     position: relative;
     overflow: hidden;
-    // display: none;
+    @media screen and (max-width: 1024px){
+
+        display: none;
+    }
 
     &__shoe{
         position: absolute;

@@ -1,0 +1,99 @@
+.responsive{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/video_poster.jpg);
+    background-size: cover;
+    display: none;
+    @media screen and (max-width: 1024px){
+        display: block;
+    }
+    img{
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: auto;
+        top: 5vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h1{
+        font-family: $title-font;
+        font-size: 4rem;
+        text-align: center;
+        color: $white;
+        margin: 10rem auto 5rem;
+        position: relative;
+        width: 60%;
+        width: fit-content;
+        z-index: 5;
+        &::after{
+            content: ' ';
+            position: absolute;
+            width: 30%;
+            height: 3px;
+            top: calc(100% + 3px);
+            left: 0;
+            background: $white;
+        }
+    }
+    p{
+        color: $white;
+        font-size: 1.8rem;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+        &:last-of-type{
+            margin-bottom: 5rem;
+        }
+    }
+    .kickstarter{
+        width: 100px;
+        height: 100px;
+        background: $ksgreen;
+        border: solid 2px $white;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        transform: rotate(-45deg);
+        img{
+            width: 70%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+    }
+    h3{
+        color: $white;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: 2.5rem;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5rem;
+        a{
+            display: block;
+            width: 70px;
+            height: 70px;
+            background: $white;
+            transform: rotate(-45deg);
+            position: relative;
+            img{
+                width: 70%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            }
+        }
+    }
+}
