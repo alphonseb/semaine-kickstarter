@@ -10,7 +10,6 @@
             </div>
         </div>
     </div>
-
     <div class="firstInfo mouse-parallax-slow">
       <p>
         Freestate was designed to feel at home both on land and in water : the great breathing system of the shoes allows to speed up the drying process. You won’t even notice they were wet !
