@@ -43,6 +43,12 @@
     &[data-transition="5"]{
         background: url(../img/transitions/rocky-mountains.jpg);
     }
+    &[data-transition="6"]{
+        background: url(../img/transitions/blackforest.jpg);
+    }
+    &[data-transition="7"]{
+        background: url(../img/transitions/manchester.jpg);
+    }
 }
 
 @keyframes translate {

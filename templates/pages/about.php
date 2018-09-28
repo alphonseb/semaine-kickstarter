@@ -1,4 +1,4 @@
-<div class="about" data-select="5">
+<div class="about" data-select="8">
     <h2 class="about__title">Where it all began</h2>
     <div class="about__content">
         <div class="about__content__map">
@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="about__content__column">
-            <img src="dist/img/temp/squirrel.jpg" alt="">
+            <img src="dist/img/about1.jpg" alt="">
             <div>
                 <h3>Our Brand</h3>
                 <p>
@@ -35,11 +35,11 @@
                     You can wear Freestate in and out of the water, it is quick drying, ultra-lightweight, created to fit each foot’s shape and smart enough for any occasion.
                 </p>
             </div>
-            <img src="dist/img/temp/squirrel.jpg" alt="">
+            <img src="dist/img/about2.jpg" alt="">
 
         </div>
         <div class="about__content__column">
-            <img src="dist/img/temp/volcano.jpg" alt="">
+            <img src="dist/img/about3.jpg" alt="">
             <div>
                 <h3>Our inspiration</h3>
                 <p>

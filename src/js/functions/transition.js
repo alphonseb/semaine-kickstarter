@@ -15,7 +15,7 @@ window.addEventListener(
     'wheel',
     (e) => {
         if (window.innerWidth > 1024) {
-            if(e.wheelDelta < 0){
+            if(e.wheelDelta < 0 && parseInt(displayed.dataset.select) !== 1){ //Force click on button
                 transitionForwards();
             }
             else{

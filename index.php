@@ -20,4 +20,6 @@ include "templates/pages/page6.php";
 
 include "templates/pages/page7.php";
 
+include "templates/pages/about.php";
+
 require "templates/footer.php";

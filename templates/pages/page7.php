@@ -25,4 +25,5 @@
     <div class="squareW">
     </div>
   </div>
+  <a href="#" class="next-page" title="Go to your next destination"><p>Next Destination</p></a>
 </div>
