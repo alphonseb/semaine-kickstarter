@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Freestate</title>
     <link rel="stylesheet" href="dist/css/app.css">
+    <link rel="shortcut icon" href="dist/img/favicon.png">
 </head>
 <body>
 <div id="fullpage">
