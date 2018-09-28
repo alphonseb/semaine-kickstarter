@@ -13,6 +13,7 @@ function showText(indicators, infos){
             indicator.addEventListener(
                 'mouseenter',
                 () => {
+                    indicator.style.cursor = 'help';
                     infos.forEach(
                         (info) => {
                             info.style.display = 'block';
@@ -25,6 +26,7 @@ function showText(indicators, infos){
             indicator.addEventListener(
                 'mouseleave',
                 () => {
+                    indicator.style.cursor = 'default';
                     infos.forEach(
                         (info) => {
                             info.style.display = 'none';

@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     z-index: 5;
-    background: url(../img/transitions/spain.jpg);
+
     // border: solid 0px $lightblue;
     width: 0;
     color: $white;
@@ -27,6 +27,15 @@
     }
     &.translate{
         animation: translate 3s ease-in-out forwards;
+    }
+    &[data-transition="1"]{
+        background: url(../img/transitions/spain.jpg);
+    }
+    &[data-transition="2"]{
+        background: url(../img/transitions/beachsteps.jpg);
+    }
+    &[data-transition="3"]{
+        background: url(../img/transitions/hk.jpg);
     }
 }
 

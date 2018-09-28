@@ -1,5 +1,5 @@
 // let transitionBlocks = document.querySelectorAll('.transition div');
-let transitionContainer = document.querySelector('.transition');
+// let transitionContainer = document.querySelector('.transition');
 let isScrolling = false;
 let displayed = document.querySelector('.is-displayed');
 let nextPage = document.querySelector(`[data-select="${parseInt(displayed.dataset.select) + 1}"]`);
@@ -8,6 +8,7 @@ let homepage = document.querySelector('.homepage');
 let page2 = document.querySelector('.page2');
 let link = document.querySelector('#travel');
 let nextPageLinks = document.querySelectorAll('.next-page');
+let lastY;
 
 
 window.addEventListener(
@@ -19,6 +20,21 @@ window.addEventListener(
         else{
             transitionBackwards();
         }
+    }
+)
+
+window.addEventListener(
+    'touchmove',
+    (e  ) => {
+        let currentY = e.touches[0].clientY;
+        if(currentY > lastY){
+            transitionBackwards();
+         // moved down
+        }else if(currentY < lastY){
+            transitionForwards();
+         // moved up
+        }
+        lastY = currentY;
     }
 )
 
@@ -34,6 +50,7 @@ nextPageLinks.forEach(
     }
 )
 
+
 link.addEventListener(
     'click',
     (e) => {
@@ -48,6 +65,7 @@ link.addEventListener(
 function transitionForwards(){
     // transitionContainer.style.display = 'flex';
     if (document.querySelectorAll('.full').length === 0 && !isScrolling) {
+        let transitionContainer = document.querySelector(`.transition[data-transition="${displayed.dataset.select}"]`);
         setTimeout(
             () => {
                 transitionContainer.classList.add('translate');
@@ -109,6 +127,7 @@ function transitionForwards(){
 function transitionBackwards(){
     // transitionContainer.style.display = 'flex';
     if (document.querySelectorAll('.full').length === 0 && !isScrolling) {
+        let transitionContainer = document.querySelector(`.transition[data-transition="${parseInt(displayed.dataset.select) - 2}"]`);
         setTimeout(
             () => {
                 transitionContainer.classList.add('translate');
@@ -124,23 +143,25 @@ function transitionBackwards(){
 
         setTimeout(
             () => {
-                displayed.style.display = 'none';
-                prevPage.style.display = 'block';
-                displayed.classList.remove('is-displayed');
-                if (document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`)) {
+                if (parseInt(displayed.dataset.select)!==1) {
 
-                    document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`).pause();
+                    displayed.style.display = 'none';
+                    prevPage.style.display = 'block';
+                    displayed.classList.remove('is-displayed');
+                    if (document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`)) {
+
+                        document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`).pause();
+                    }
+                    displayed = prevPage;
+                    if (document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`)) {
+
+                        document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`).play();
+                    }
+                    displayed.classList.add('is-displayed');
+                    nextPage = document.querySelector(`[data-select="${parseInt(displayed.dataset.select) + 1}"]`);
+
+                    prevPage = ((parseInt(displayed.dataset.select) - 1) > 0)?document.querySelector(`[data-select="${parseInt(displayed.dataset.select) - 1}"]`):'';
                 }
-                displayed = prevPage;
-                if (document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`)) {
-
-                    document.querySelector(`audio[data-audio="${parseInt(displayed.dataset.select)}"]`).play();
-                }
-                displayed.classList.add('is-displayed');
-                nextPage = document.querySelector(`[data-select="${parseInt(displayed.dataset.select) + 1}"]`);
-
-                prevPage = ((parseInt(displayed.dataset.select) - 1) > 0)?document.querySelector(`[data-select="${parseInt(displayed.dataset.select) - 1}"]`):'';
-                console.log({displayed}, {nextPage}, {prevPage});
             },
             1600
         )

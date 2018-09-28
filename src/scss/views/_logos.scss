@@ -1,8 +1,36 @@
 .logos{
   display: flex;
   margin: 0;
-  p{
-    color: white;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 5vh;
+  padding: 0 1rem;
+  left: 0;
+  a{
+      display: block;
+      text-decoration: none;
+    color: $black;
+    font-size: 3rem;
     font-family: 'FilsonProMedium';
+  }
+  a.kickstarter{
+      width: 80px;
+      height: 80px;
+      margin-bottom: 2rem;
+      background: $ksgreen;
+      border: solid 2px $white;
+      position: relative;
+      transition: all .3s ease;
+      transform: translateX(-70%) rotate(-45deg);
+      &>img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 30%;
+          height: auto;
+          transform:translateY(-50%) translateX(-50%)  rotate(45deg) ;
+      }
+
   }
 }
