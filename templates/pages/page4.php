@@ -1,6 +1,6 @@
 <div class="page4 section" data-select='4'>
   <?php include "templates/logos.php"; ?>
-  <audio src="dist/audio/mer.mp3" loop data-audio='3'></audio>
+  <audio src="dist/audio/mer.mp3" loop data-audio='4'></audio>
   <img class="greyShoe mouse-parallax" src="dist/img/shoes/shoe.png" alt="grey shoe">
   <h2 class="bigAttribute mouse-parallax">
     For hot summer days

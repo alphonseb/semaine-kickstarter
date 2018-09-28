@@ -1,43 +1,52 @@
-.page4{
+.page5{
     display: none;
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/city_day.jpg);
+    background-image: url(../img/city_night.jpg);
     background-position: center;
     background-size: 100%;
     .greyShoe{
       position: absolute;
-      top: 20%;
+      top: 16%;
       right: 30%;
       width: 42%;
-      transform: rotate(30deg);
+      transform: rotate(29deg);
     }
     .bigAttribute{
-      left: 70%;
-      font-size: 10.5rem
+      left: 5%;
+      bottom: 6%;
+      color: white;
     }
     .firstInfo{
       right: 73%;
       top: 42%;
+      p{
+        color: white;
+      }
     }
     .secondInfo{
-      right: 5%;
-      top: 67%;
+      right: 3%;
+      top: 33%;
+      p{
+        color: white;
+      }
     }
     .firstTitle{
       top: 37%;
       left: 8%;
+      color: white;
     }
     .secondTitle{
-      top: 63%;
-      right: 12%;
+      top: 28%;
+      right: 8%;
+      color: white;
     }
     .sLeft{
-      left: 36%;
-      bottom: 51%;
+      left: 41%;
+      bottom: 50%;
     }
     .sRight{
-      right: 34%;
-      bottom: 35%;
+      right: 40%;
+      bottom: 40%;
     }
 }
