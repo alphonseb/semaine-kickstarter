@@ -2,9 +2,7 @@
   <?php include "templates/logos.php"; ?>
   <audio src="dist/audio/mer.mp3" loop data-audio='3'></audio>
   <img class="blueShoe" src="dist/img/shoes/blueshoe.png" alt="blue shoe" title="shoes">
-  <h2 class="bigAttribute">
-    ...to the beach
-  </h2>
+  <h2 class="bigAttribute">...to the beach</h2>
   <h3 class="firstTitle littleAttribute">ULTRA-LIGHT</h3>
   <div class="firstInfo">
     <p>

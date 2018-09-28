@@ -1,10 +1,8 @@
 <div class="page4 section" data-select='4'>
   <?php include "templates/logos.php"; ?>
-  <audio src="dist/audio/mer.mp3" loop data-audio='3'></audio>
+  <audio src="dist/audio/mer.mp3" loop data-audio='4'></audio>
   <img class="greyShoe" src="dist/img/shoes/shoe.png" alt="grey shoe" title="shoes">
-  <h2 class="bigAttribute">
-    For hot summer days
-  </h2>
+  <h2 class="bigAttribute">For hot summer days</h2>
   <h3 class="firstTitle littleAttribute">REMARKABLE FIT</h3>
   <div class="firstInfo">
     <p>

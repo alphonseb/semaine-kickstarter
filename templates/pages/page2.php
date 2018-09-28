@@ -1,9 +1,7 @@
 <div class="page2 section" data-select='2'>
   <?php include "templates/logos.php"; ?>
   <audio src="dist/audio/piscine.mp3" data-audio="2" loop></audio>
-    <h2 class="bigTitle bigAttribute mouse-parallax">
-      From the pool...
-  </h2>
+    <h2 class="bigTitle bigAttribute mouse-parallax">From the pool...</h2>
     <img class="yellowShoe mouse-parallax" src="dist/img/shoes/shoe7.png" alt="yellow shoes">
     <h3 class="firstTitle littleAttribute mouse-parallax-slow">WATER FRIENDLY</h3>
     <div class="indicator">

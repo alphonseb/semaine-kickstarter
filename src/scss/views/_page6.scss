@@ -1,0 +1,46 @@
+.page6{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/montagne.jpeg);
+    background-position: center;
+    background-size: 100%;
+    .blackShoe{
+      position: absolute;
+      top: -29%;
+      right: 37%;
+      width: 82%;
+      transform: rotate(2deg);
+    }
+    .bigAttribute{
+      left: 66%;
+      bottom: 47%;
+      color: white;
+    }
+    .firstInfo{
+      right: 41%;
+      top: 17%;
+    }
+    .secondInfo{
+      right: 7%;
+      top: 74%;
+    }
+    .firstTitle{
+      top: 13%;
+      left: 37%;
+      color: white;
+    }
+    .secondTitle{
+      top: 69%;
+      right: 11%;
+      color: white;
+    }
+    .sLeft{
+      left: 13%;
+      bottom: 61%;
+    }
+    .sRight{
+      right: 60%;
+      bottom: 21%;
+    }
+}
