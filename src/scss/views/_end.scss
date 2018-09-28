@@ -1,0 +1,61 @@
+.endpage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/end.jpg);
+    background-size: cover;
+    display: none;
+    h2,h3{
+        text-align: center;
+        color: $white;
+    }
+    h2{
+        font-size: 5rem;
+    }
+    h3{
+        font-size: 4rem;
+    }
+    .kickstarter{
+        width: 100px;
+        height: 100px;
+        background: $ksgreen;
+        border: solid 2px $white;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        transform: rotate(-45deg);
+        img{
+            width: 70%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        }
+    }
+    div.socials{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 5rem;
+        a{
+            display: block;
+            width: 70px;
+            height: 70px;
+            background: $white;
+            transform: rotate(-45deg);
+            position: relative;
+            img{
+                width: 70%;
+                height: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%) rotate(45deg);
+            }
+        }
+    }
+}

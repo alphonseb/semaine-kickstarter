@@ -22,4 +22,6 @@ include "templates/pages/page7.php";
 
 include "templates/pages/about.php";
 
+include "templates/pages/end.php";
+
 require "templates/footer.php";
